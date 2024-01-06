@@ -2,7 +2,7 @@
 <html lang="en">
 
 
-<!-- edit-invoice24:07-->
+<!-- create-invoice24:07-->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
@@ -21,172 +21,27 @@
 
 <body>
     <div class="main-wrapper">
-        <div class="header">
-			<div class="header-left">
-				<a href="index-2.html" class="logo">
-					<img src="assets/img/logo.png" width="35" height="35" alt=""> <span>Preclinic</span>
-				</a>
-			</div>
-			<a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
-            <a id="mobile_btn" class="mobile_btn float-left" href="#sidebar"><i class="fa fa-bars"></i></a>
-            <ul class="nav user-menu float-right">
-                <li class="nav-item dropdown d-none d-sm-block">
-                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"><i class="fa fa-bell-o"></i> <span class="badge badge-pill bg-danger float-right">3</span></a>
-                    <div class="dropdown-menu notifications">
-                        <div class="topnav-dropdown-header">
-                            <span>Notifications</span>
-                        </div>
-                        <div class="drop-scroll">
-                            <ul class="notification-list">
-                                <li class="notification-message">
-                                    <a href="activities.html">
-                                        <div class="media">
-											<span class="avatar">
-												<img alt="John Doe" src="assets/img/user.jpg" class="img-fluid rounded-circle">
-											</span>
-											<div class="media-body">
-												<p class="noti-details"><span class="noti-title">John Doe</span> added new task <span class="noti-title">Patient appointment booking</span></p>
-												<p class="noti-time"><span class="notification-time">4 mins ago</span></p>
-											</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="notification-message">
-                                    <a href="activities.html">
-                                        <div class="media">
-											<span class="avatar">V</span>
-											<div class="media-body">
-												<p class="noti-details"><span class="noti-title">Tarah Shropshire</span> changed the task name <span class="noti-title">Appointment booking with payment gateway</span></p>
-												<p class="noti-time"><span class="notification-time">6 mins ago</span></p>
-											</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="notification-message">
-                                    <a href="activities.html">
-                                        <div class="media">
-											<span class="avatar">L</span>
-											<div class="media-body">
-												<p class="noti-details"><span class="noti-title">Misty Tison</span> added <span class="noti-title">Domenic Houston</span> and <span class="noti-title">Claire Mapes</span> to project <span class="noti-title">Doctor available module</span></p>
-												<p class="noti-time"><span class="notification-time">8 mins ago</span></p>
-											</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="notification-message">
-                                    <a href="activities.html">
-                                        <div class="media">
-											<span class="avatar">G</span>
-											<div class="media-body">
-												<p class="noti-details"><span class="noti-title">Rolland Webber</span> completed task <span class="noti-title">Patient and Doctor video conferencing</span></p>
-												<p class="noti-time"><span class="notification-time">12 mins ago</span></p>
-											</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="notification-message">
-                                    <a href="activities.html">
-                                        <div class="media">
-											<span class="avatar">V</span>
-											<div class="media-body">
-												<p class="noti-details"><span class="noti-title">Bernardo Galaviz</span> added new task <span class="noti-title">Private chat module</span></p>
-												<p class="noti-time"><span class="notification-time">2 days ago</span></p>
-											</div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="topnav-dropdown-footer">
-                            <a href="activities.html">View all Notifications</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav-item dropdown d-none d-sm-block">
-                    <a href="javascript:void(0);" id="open_msg_box" class="hasnotifications nav-link"><i class="fa fa-comment-o"></i> <span class="badge badge-pill bg-danger float-right">8</span></a>
-                </li>
-                <li class="nav-item dropdown has-arrow">
-                    <a href="#" class="dropdown-toggle nav-link user-link" data-toggle="dropdown">
-                        <span class="user-img"><img class="rounded-circle" src="assets/img/user.jpg" width="40" alt="Admin">
-							<span class="status online"></span></span>
-                        <span>Admin</span>
-                    </a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="profile.html">My Profile</a>
-						<a class="dropdown-item" href="edit-profile.html">Edit Profile</a>
-						<a class="dropdown-item" href="settings.html">Settings</a>
-						<a class="dropdown-item" href="login.html">Logout</a>
-					</div>
-                </li>
-            </ul>
-            <div class="dropdown mobile-user-menu float-right">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="profile.html">My Profile</a>
-                    <a class="dropdown-item" href="edit-profile.html">Edit Profile</a>
-                    <a class="dropdown-item" href="settings.html">Settings</a>
-                    <a class="dropdown-item" href="login.html">Logout</a>
-                </div>
-            </div>
-        </div>
-        <div class="sidebar" id="sidebar">
-            <div class="sidebar-inner slimscroll">
-                <div id="sidebar-menu" class="sidebar-menu">
-                    <ul>
-                        <li class="menu-title">Main</li>
-                        <li class="active">
-                            <a href="index-2.html"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
-                        </li>
-						
-                        <li>
-                            <a href="patients.html"><i class="fa fa-wheelchair"></i> <span>Patients</span></a>
-                        </li>
-                        <li>
-                            <a href="appointments.html"><i class="fa fa-calendar"></i> <span>Appointments</span></a>
-                        </li>
-                       
-                        <li>
-                            <a href="settings.html"><i class="fa fa-cog"></i> <span>Settings</span></a>
-                        </li>
+        <?php include("./commonPage/header.php"); ?>
+        <?php include("./commonPage/sidebar.php"); ?>
 
-                        <li>
-                            <a href="calendar.html"><i class="fa fa-calendar"></i> <span>Calendar</span></a>
-                        </li>
-                        <li class="menu-title">Extras</li>
-                        <li class="submenu">
-                            <a href="#"><i class="fa fa-columns"></i> <span>Pages</span> <span class="menu-arrow"></span></a>
-                            <ul style="display: none;">
-                                <li><a href="login.html"> Login </a></li>
-                                <li><a href="register.html"> Register </a></li>
-                                <li><a href="forgot-password.html"> Forgot Password </a></li>
-                                <li><a href="change-password2.html"> Change Password </a></li>
-                                <li><a href="lock-screen.html"> Lock Screen </a></li>
-                                <li><a href="profile.html"> Profile </a></li>
-                                <li><a href="error-404.html">404 Error </a></li>
-                            </ul>
-                        </li>
-                        
-                    </ul>
-                </div>
-            </div>
-        </div>
+        
         <div class="page-wrapper">
             <div class="content">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h4 class="page-title">Edit Invoice</h4>
+                        <h4 class="page-title">Create Invoice</h4>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-sm-12">
                         <form>
                             <div class="row">
                                 <div class="col-sm-6 col-md-3">
                                     <div class="form-group">
-                                        <label>Client <span class="text-danger">*</span></label>
+                                        <label>Patient <span class="text-danger">*</span></label>
                                         <select class="select">
                                             <option>Please Select</option>
-                                            <option selected>Charles Ortega</option>
+                                            <option>Charles Ortega</option>
                                             <option>Denise Stevens</option>
                                             <option>Jennifer Robinson</option>
                                         </select>
@@ -197,15 +52,16 @@
                                         <label>Department <span class="text-danger">*</span></label>
                                         <select class="select">
                                             <option>Select Department</option>
-                                            <option selected>Dentists</option>
+                                            <option>Dentists</option>
                                             <option>Neurology</option>
                                         </select>
                                     </div>
                                 </div>
+
                                 <div class="col-sm-6 col-md-3">
                                     <div class="form-group">
                                         <label>Email</label>
-                                        <input class="form-control" type="email" value="charlesortega@example.com">
+                                        <input class="form-control" type="email">
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-md-3">
@@ -214,28 +70,28 @@
                                         <select class="select">
                                             <option>Select Tax</option>
                                             <option>VAT</option>
-                                            <option selected>GST</option>
+                                            <option>GST</option>
                                             <option>No Tax</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-md-3">
                                     <div class="form-group">
-                                        <label>Client Address</label>
-                                        <textarea class="form-control" rows="3">5754 Airport Rd, Coosada, AL, 36020</textarea>
+                                        <label>Patient Address</label>
+                                        <textarea class="form-control" rows="3"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-md-3">
                                     <div class="form-group">
                                         <label>Billing Address</label>
-                                        <textarea class="form-control" rows="3">5754 Airport Rd, Coosada, AL, 36020</textarea>
+                                        <textarea class="form-control" rows="3"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-md-3">
                                     <div class="form-group">
                                         <label>Invoice date <span class="text-danger">*</span></label>
                                         <div class="cal-icon">
-                                            <input class="form-control datetimepicker" type="text" value="01/08/2018">
+                                            <input class="form-control datetimepicker" type="text">
                                         </div>
                                     </div>
                                 </div>
@@ -243,7 +99,7 @@
                                     <div class="form-group">
                                         <label>Due Date <span class="text-danger">*</span></label>
                                         <div class="cal-icon">
-                                            <input class="form-control datetimepicker" type="text" value="07/08/2018">
+                                            <input class="form-control datetimepicker" type="text">
                                         </div>
                                     </div>
                                 </div>
@@ -260,64 +116,45 @@
                                                     <th style="width:100px;">Unit Cost</th>
                                                     <th style="width:80px;">Qty</th>
                                                     <th>Amount</th>
-                                                    <th></th>
+                                                    <th> </th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td>1</td>
                                                     <td>
-                                                        <input class="form-control" type="text" value="Full body checkup" style="min-width:150px">
+                                                        <input class="form-control" type="text" style="min-width:150px">
                                                     </td>
                                                     <td>
-                                                        <input class="form-control" type="text" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit" style="min-width:150px">
+                                                        <input class="form-control" type="text" style="min-width:150px">
                                                     </td>
                                                     <td>
-                                                        <input class="form-control" style="width:100px" type="text" value="150">
+                                                        <input class="form-control" style="width:100px" type="text">
                                                     </td>
                                                     <td>
-                                                        <input class="form-control" style="width:80px" type="text" value="1">
+                                                        <input class="form-control" style="width:80px" type="text">
                                                     </td>
                                                     <td>
-                                                        <input class="form-control form-amt" readonly="" style="width:120px" type="text" value="150">
+                                                        <input class="form-control form-amt" readonly="" style="width:120px" type="text">
                                                     </td>
                                                     <td><a href="javascript:void(0)" class="text-success font-18" title="Add"><i class="fa fa-plus"></i></a></td>
                                                 </tr>
                                                 <tr>
                                                     <td>2</td>
                                                     <td>
-                                                        <input class="form-control" type="text" value="Blood Test" style="min-width:150px">
+                                                        <input class="form-control" type="text" style="min-width:150px">
                                                     </td>
                                                     <td>
-                                                        <input class="form-control" type="text" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit" style="min-width:150px">
+                                                        <input class="form-control" type="text" style="min-width:150px">
                                                     </td>
                                                     <td>
-                                                        <input class="form-control" style="width:100px" type="text" value="12">
+                                                        <input class="form-control" style="width:100px" type="text">
                                                     </td>
                                                     <td>
-                                                        <input class="form-control" style="width:80px" type="text" value="1">
+                                                        <input class="form-control" style="width:80px" type="text">
                                                     </td>
                                                     <td>
-                                                        <input class="form-control form-amt" readonly="" style="width:120px" type="text" value="12">
-                                                    </td>
-                                                    <td><a href="javascript:void(0)" class="text-danger font-18" title="Remove"><i class="fa fa-trash-o"></i></a></td>
-                                                </tr>
-												<tr>
-                                                    <td>3</td>
-                                                    <td>
-                                                        <input class="form-control" type="text" value="General checkup" style="min-width:150px">
-                                                    </td>
-                                                    <td>
-                                                        <input class="form-control" type="text" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit" style="min-width:150px">
-                                                    </td>
-                                                    <td>
-                                                        <input class="form-control" style="width:100px" type="text" value="100">
-                                                    </td>
-                                                    <td>
-                                                        <input class="form-control" style="width:80px" type="text" value="1">
-                                                    </td>
-                                                    <td>
-                                                        <input class="form-control form-amt" readonly="" style="width:120px" type="text" value="100">
+                                                        <input class="form-control form-amt" readonly="" style="width:120px" type="text">
                                                     </td>
                                                     <td><a href="javascript:void(0)" class="text-danger font-18" title="Remove"><i class="fa fa-trash-o"></i></a></td>
                                                 </tr>
@@ -333,28 +170,28 @@
                                                     <td></td>
                                                     <td></td>
                                                     <td class="text-right">Total</td>
-                                                    <td style="text-align: right; width: 230px">262</td>
+                                                    <td style="text-align: right; padding-right: 30px;width: 230px">0</td>
                                                 </tr>
                                                 <tr>
-                                                    <td colspan="5" style="text-align: right">Tax</td>
-                                                    <td style="text-align: right;width: 230px">
+                                                    <td colspan="5" class="text-right">Tax</td>
+                                                    <td style="text-align: right; padding-right: 30px;width: 230px">
                                                         <input class="form-control text-right form-amt" value="0" readonly="" type="text">
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td colspan="5" style="text-align: right">
+                                                    <td colspan="5" class="text-right">
                                                         Discount %
                                                     </td>
-                                                    <td style="text-align: right; width: 230px">
-                                                        <input class="form-control text-right" value="26.2" type="text">
+                                                    <td style="text-align: right; padding-right: 30px;width: 230px">
+                                                        <input class="form-control text-right" type="text">
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td colspan="5" style="text-align: right; font-weight: bold">
                                                         Grand Total
                                                     </td>
-                                                    <td style="text-align: right; font-weight: bold; font-size: 16px;width: 230px">
-                                                        $ 288.2
+                                                    <td style="text-align: right; padding-right: 30px; font-weight: bold; font-size: 16px;width: 230px">
+                                                        $ 0.00
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -364,14 +201,15 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label>Other Information</label>
-                                                <textarea class="form-control" rows="4"></textarea>
+                                                <textarea class="form-control"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="text-center m-t-20">
-                                <button class="btn btn-primary submit-btn">Save Invoice</button>
+                                <button class="btn btn-grey submit-btn m-r-10">Save & Send</button>
+                                <button class="btn btn-primary submit-btn">Save</button>
                             </div>
                         </form>
                     </div>
@@ -600,5 +438,5 @@
 </body>
 
 
-<!-- edit-invoice24:07-->
+<!-- create-invoice24:07-->
 </html>
