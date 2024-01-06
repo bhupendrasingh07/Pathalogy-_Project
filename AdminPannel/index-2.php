@@ -1,3 +1,7 @@
+<?php
+session_start();
+include('./config/auth_check.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -110,13 +114,17 @@
 							<img class="rounded-circle" src="assets/img/user.jpg" width="24" alt="Admin">
 							<span class="status online"></span>
 						</span>
-						<span>Admin</span>
+						<span><?php echo $_SESSION['name']; ?></span>
                     </a>
 					<div class="dropdown-menu">
 						<a class="dropdown-item" href="profile.html">My Profile</a>
 						<a class="dropdown-item" href="edit-profile.html">Edit Profile</a>
 						<a class="dropdown-item" href="settings.html">Settings</a>
-						<a class="dropdown-item" href="login.html">Logout</a>
+						<a class="dropdown-item" href="./config/logout.php"><?php if(isset($_SESSION['name'])){
+                            echo "Logout";
+                        }else{
+                            echo "Login";
+                        } ?></a>
 					</div>
                 </li>
             </ul>
